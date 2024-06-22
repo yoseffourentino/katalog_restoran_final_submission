@@ -1,0 +1,83 @@
+@media screen and (min-width: 1200px){
+    .restaurants,
+    .fav-container{
+        margin: 0px auto;
+        max-width: 1400px;
+
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .restaurants,
+    .fav-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+    }
+    .detail-container{
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .restaurants,
+    .fav-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        justify-content: space-between;
+    }
+    .hamburger-btn{
+        display: block;
+    }
+    .hamburger-btn.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger-btn.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-btn.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* .hamburger-btn:focus{
+        border: 1px solid blue;
+    } */
+    .nav-menu{
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(243, 202, 82);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu a{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .restaurants,
+    .fav-container{
+        grid-template-columns: 1fr;
+    }
+    #search{
+        width: 80%;
+    }
+}

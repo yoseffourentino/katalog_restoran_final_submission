@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+html{
+    height: 100%;
+}
+body {
+    background-color: rgb(246, 233, 178);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: rgb(10, 104, 71);
+    color: rgb(246, 233, 178);
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(243, 202, 82);
+}
+
+header h1 {
+    color: rgb(10, 104, 71);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu a {
+    font-size: 1.2rem;
+    color: rgb(10, 104, 71);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    background-color: rgb(246, 233, 178);
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.hamburger-btn {
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    background-color: rgb(243, 202, 82);
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(10, 104, 71);
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.banner{
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.title-content {
+    color: rgb(10, 104, 71);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#search {
+    display: inline-block;
+    margin: 30px;
+    width: 500px;
+    min-height: 44px;
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.restaurants,
+.fav-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+
+}
+
+.card {
+    border-radius: 7px;
+    background-color: rgb(122, 186, 120);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card .content {
+    padding: 7px 15px 15px 15px;
+}
+.card .resto-name{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(243, 202, 82);
+    border-radius: 7px 7px 0px 0px;
+    padding: 5px;
+}
+.card img {
+    width: 100%;
+    border-radius: 7px;
+    height: 250px;
+    object-fit: cover;
+}
+.resto-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card .fa-star,
+.card-detail .fa-star {
+    color: yellow;
+}
+.card .fa-location-dot,
+.card-detail .fa-location-dot {
+    color: rgb(243, 56, 56);
+}
+.card .detail-button{
+    text-align: center;
+    margin: 15px 0px;
+}
+.detail-button a{
+    color: black;
+    background-color: rgb(243, 202, 82);
+    border-radius: 7px;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 15px 20px;
+}
+.dertail-button a:hover{
+    background-color:  rgb(246, 233, 178);
+    transition: 0.5s;
+}
+/* Detail */
+.detail-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+}
+.card-detail{
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    background-color: rgb(122, 186, 120);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 30px;
+}
+.card-detail img{
+    max-width: 100%;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+.desc{
+    margin-bottom: 7px;
+}
+.restaurant-name{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+.categories{
+    font-weight: bold;
+    margin-top: 7px;
+}
+.menu .foods{
+    font-weight: bold;
+    margin-top: 7px;
+}
+.customer-review h3{
+    margin: 10px;
+}
+.review-container{
+    padding: 15px;
+    background-color: wheat;
+    border-radius: 7px;
+}
+.name{
+    font-weight: bold;
+}
+.date{
+    font-size: 12px;
+}
+.review{
+    margin-bottom: 5px;
+}
+.fav-btn{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(122, 186, 120);
+    
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+/* Favorite */
+.fav-title{
+    margin: 30px;
+    color:  rgb(10, 104, 71);
+}
+/* footer */
+footer {
+    margin-top: auto;
+    background-color: rgb(10, 104, 71);
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    padding: 30px;
+    color: rgb(246, 233, 178);
+}
