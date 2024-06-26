@@ -13,7 +13,7 @@ module.exports = merge(common, {
       },
     },
     compress: true,
-    port: 9090,
+    port: 9080,
     client: {
       overlay: {
         errors: true,

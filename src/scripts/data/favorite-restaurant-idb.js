@@ -1,5 +1,6 @@
 import { openDB, deleteDB } from "idb";
 import CONFIG from "../globals/config";
+
 const { DATABASE_NAME, DATABASE_VERSION, OBJECT_STORE_NAME } = CONFIG;
 const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
   upgrade(database) {
@@ -36,4 +37,3 @@ const FavouriteRestaurantIdb = {
   },
 };
 export default FavouriteRestaurantIdb;
-

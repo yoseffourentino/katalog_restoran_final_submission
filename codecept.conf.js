@@ -14,7 +14,7 @@ exports.config = {
     Playwright: {
       browser: 'chromium',
       url: 'http://localhost:9090',
-      show: false,
+      show: true,
     },
   },
   include: {

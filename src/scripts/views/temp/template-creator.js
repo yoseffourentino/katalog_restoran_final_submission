@@ -9,7 +9,7 @@ const createRestaurantItemTemplate = (restaurant) => `
         <div class="card">
         <h3 class="resto-name">${restaurant.name}</h3>
             <div class="content">
-                <img class="resto-img lazyload" src="${CONFIG.BASE_MEDIUM_IMAGE_URL}${restaurant.pictureId}" alt="${restaurant.name} restaurant">
+                    <img class="resto-img lazyload" src="${CONFIG.BASE_LARGE_IMAGE_URL}${restaurant.pictureId}" alt="${restaurant.name} restaurant">
                 <div class="resto-title">
                     <h4 class="city"><i class="fa-solid fa-location-dot"></i> ${restaurant.city}</h4>
                     <h5 class="rating"><i class="fa-solid fa-star"></i> ${restaurant.rating}</h5>
